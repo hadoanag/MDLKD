@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <link rel="stylesheet" href="./assets/css/base.css" /> 
+
+  <link rel="stylesheet" href="./assets/css/grid.css" />
+
+  <link rel="stylesheet" href="./assets/css/thanhtoan.css" />
+
+  <link rel="stylesheet" href="./assets/css/trangchu.css" />
+  <link rel="stylesheet" href="./assets/css/baiviet.css" />
+  <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link rel="stylesheet" href="./assets/css/base.css" />
-
-    <link rel="stylesheet" href="./assets/css/grid.css" />
-
-    <link rel="stylesheet" href="./assets/css/trangchu.css" />
-    <link rel="stylesheet" href="./assets/css/thanhtoan.css" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Thanh Toan</title>
   </head>
 
@@ -126,6 +118,37 @@
           </div>
         </div>
       </header>
+
+      <!-- Modal Card-->
+      <div class="modal-cart">
+        <div class="modal-container">
+          <div class="modal-top">
+            <h2 class="modal-title">Giỏ Hàng</h2>
+            <i class="modal-close fas fa-times"></i>
+          </div>
+          <div class="model-main">
+            <div class="modal-main__top">
+              <span>Hình ảnh</span>
+              <span>Tên sản phầm</span>
+              <span>Số Lượng</span>
+              <span>Đơn giá</span>
+              <span>Thành tiền</span>
+              <span></span>
+            </div>
+            <div class="modal-main__center"></div>
+          </div>
+          <div class="modal-bot">
+            <div class="modal-cacular">
+              <span>Tổng tiền:</span>
+              <span class="sum-money"></span>
+            </div>
+            <a href="#" class="model-oder">
+              <button>Đặt Hàng</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
       <main class="checkout">
         <div class="checkout__description">
           <a href="index.html">Trang chủ</a> <span>Thanh toán</span>
@@ -291,16 +314,22 @@
       crossorigin="anonymous"
     ></script>
 
-    <script
+    <!-- MAIN JS -->
+    <!-- <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
-    ></script>
-
+    ></script> -->
     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
+    ></script> -->
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
@@ -309,6 +338,12 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+<<<<<<< HEAD
     <script src="./js/cart.js" type="module"></script>
+=======
+    <script src="./js/slider.js"></script>
+    <script src="./js/cart.js"></script>
+>>>>>>> 7ab58baf2c21bd0d4d3addd13ca99b75c70305ce
   </body>
+  
 </html>
